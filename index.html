@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/bc793d7b38.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container min-w-svw min-h-svh ">
+      <div class="nav-bar"  >
+        <nav  class=" nav  text-lg flex justify-end w-full z-10 "̥ onscroll="scroll()" >
+          <ul  id="menu-item" class="md:text-xl text-[85%] flex justify-end pt-4 text-center space-x-8 px-8">
+            <li><a href="#home" class="title md:hover:text-blue-600">Home</a></li>
+            <li><a href="#destination" class="title md:hover:text-blue-600">Destinations</a></li>
+            <li><a href="#flight" class="title md:hover:text-blue-600">Flights</a></li>
+            <li><a href="#Contact" class="title md:hover:text-blue-600">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Content -->
+      <div id="home"
+        class="content md:bg-[url(./images/travel.jpeg)]  bg-[url(images/colorful-hot-air-balloon-picture-id841064058-1024x1024.jpg)]   w-screen h-screen  bg-cover bg-center"
+      >
+        <div class=" block relative  top-[30%]  p-10">
+          <h1 class="text-5xl " >
+            Travel the World with Ease!
+          </h1>
+          <p class="text-xl text-gray-950- mt-2 ">
+            We offer the best deals on flights, hotels, car rentals, and more.
+            Start planning your next trip today!
+          </p>
+        </div>
+      </div>
+
+        <!-- Destination --> 
+        <div class="destinations" id="destination">
+          <div class="container">
+              <h2 class="text-4xl px-8 mt-8">Explore our Destinations</h2>
+              <p class="text-lg px-10 mt-3 text-gray-600 line-clamp-2">
+                We offer a wide range of destinations for you to explore. From the romantic city of Paris to the ancient ruins of Rome, we have something for everyone. Our expert travel agents will help you plan the perfect trip, whether you're looking for a relaxing beach vacation or an action-packed adventure.
+            </p>
+              <div class="grid lg:grid-cols-3 gap-7 transform  mt-10 bg-cover bg-center w-[50vw]  pt-5 ml-20 md:w-[70vw] md:pl-40 md:m-24 text-3xl ">
+
+                <div>
+                  <h4 class="absolute md:p-24 p-20">France</h4>
+                  <img  class=" transform hover:opacity-40 duration-[200ms] " src="images/france.jpeg" alt="France">
+                </div>
+                <div>
+                  <h4 class=" absolute md:p-24 p-20">Italy</h4>
+                  <img  class=" transform hover:opacity-40 duration-[200ms] "src="images/italy.jpeg" alt="Italy">
+                </div>
+                <div>
+                  <h4 class=" absolute  md:p-24 p-20 ">Turkey</h4>
+                  <img  class=" transform hover:opacity-40 duration-[200ms] h-[29vh]" src="images/turkey1.jpg" alt="Turkey">
+                </div>
+                <div>
+                  <h4 class=" absolute  md:p-24  p-20">Canada</h4>
+                  <img  class=" transform hover:opacity-40 duration-[200ms] " src="images/spain.jpeg" alt="Canada">
+                </div>
+                <div>
+                  <h4 class=" absolute  md:p-24 p-20">Indonesia</h4>
+                  <img  class=" transform hover:opacity-40 duration-[200ms] " src="images/indoneaia.jpeg" alt="indoneaia">
+                </div>
+                <div>
+                  <h4 class=" absolute  md:p-24 p-20" >Norway</h4>
+                  <img  class=" transform hover:opacity-40 duration-[200ms] w-[] " src="images/Bergen-Norway.jpg" alt="norway">
+                </div>
+                
+                
+                
+    
+
+              </div>
+              <div class="md:w-11/12 m-5  md:flex md:justify-center md:items-center pl-24 md:pl-32  ">
+                <button class=" cursor-pointer bg-gradient-to-r from-[#EB3349] to-[#F45C43] px-6  py-2 rounded text-white font-semibold shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] hover:shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-10px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] focus:shadow-[inset_-12px_-8px_40px_#46464620] transition-shadow">
+                 Launch More
+                </button>
+              </div>
+              
+          </div> 
+      </div>
+      <!-- ---flight-- -->
+      <div id="flight" class="flights md:bg-[url(./images/pls1.webp)] bg-[url(./images/pls3.avif)]  p-[5%]  w-screen h-screen  bg-cover bg-center mt-6 mb-8 flex items-center justify-center">
+        <div class="container">
+         
+          <p class=" md:text-lg md:px-10 hidden text-gray-950 md:line-clamp-2">
+            Find the best deals on flights to your dream destination.
+          </p>
+          <form class="w-full max-w-lg m-5 mx-auto">
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-black font-bold md:text-right mb-1 md:mb-0 pr-4" for="departure_city">
+                  Departure City
+                </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="departure_city" type="text" placeholder="New York">
+              </div>
+            </div>
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-black font-bold md:text-right mb-1 md:mb-0 pr-4" for="arrival_city">
+                  Arrival City
+                </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="arrival_city" type="text" placeholder="Paris">
+              </div>
+            </div>
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-black font-bold md:text-right mb-1 md:mb-0 pr-4" for="departure_date">
+                  Departure Date
+                </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="departure_date" type="date">
+              </div>
+            </div>
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-black font-bold md:text-right mb-1 md:mb-0 pr-4" for="return_date">
+                  Return Date
+                </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="return_date" type="date">
+              </div>
+            </div>
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-black font-bold md:text-right mb-1 md:mb-0 pr-4" for="number_of_passengersinput class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="return_date" type="date">
+              </div>
+            </div>
+            <div class="md:flex md:items-center mb-6">
+              <div class="md:w-1/3">
+                <label class="block text-black font-bold md:text-right mb-1 md:mb-0 pr-4" for="number_of_passengers">
+                  Number of Passengers
+                </label>
+              </div>
+              <div class="md:w-2/3">
+                <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="number_of_passengers" type="number" min="1" max="10" placeholder="1">
+              </div>
+            </div>
+            <div class="md:w-11/12f md:flex md:justify-center md:items-center pl-24 md:pl-32 m-10 ">
+              <button class="cursor-pointer transition-all  bg-gray-700 text-white px-6 py-2 rounded-lg border-blue-400 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-green-300 shadow-green-300 active:shadow-none">Search</button>
+            </div>
+            
+          </form>
+        </div>
+            
+      </div>
+      <!-- --contact--- -->
+      <div id="contact" class="flights bg-[url(./images/th2.jpeg)] md:bg-[url(./images/pppp.jpg)]  p-[5%]  w-screen h-screen  bg-cover bg-center mt-8 mb-8 flex items-center justify-center">
+
+      <div>
+        <h2 class="text-2xl font-bold text-center mb-8">Register for Exclusive Deals</h2>
+        <form class="w-full max-w-lg   mx-auto">
+            <div class="md:flex md:items-center mb-6">
+                <div class="md:w-1/3">
+                    <label class="block text- black font-bold md:text-right mb-1 md:mb-0 pr-4" for="first_name">
+                        First Name
+                    </label>
+                </div>
+                <div class="md:w-2/3">
+                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="first_name" type="text" placeholder="Jane">
+                </div>
+            </div>
+            <div class="md:flex md:items-center mb-6">
+                <div class="md:w-1/3">
+                    <label class="block text-black font-bold md:text-right mb-1 md:mb-0 pr-4" for="last_name">
+                        Last Name
+                    </label>
+                </div>
+                <div class="md:w-2/3">
+                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="last_name" type="text" placeholder="Doe">
+                </div>
+            </div>
+            <div class="md:flex md:items-center mb-6">
+                <div class="md:w-1/3">
+                    <label class="block text-black  font-bold md:text-right mb-1 md:mb-0 pr-4" for="email">
+                        Email
+                    </label>
+                </div>
+                <div class="md:w-2/3">
+                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="email" type="email" placeholder="jane.doe@example.com">
+                </div>
+            </div>
+            <div class="md:flex md:items-center mb-6">
+                <div class="md:w-1/3">
+                    <label class="block text-black  font-bold md:text-right mb-1 md:mb-0 pr-4" for="password">
+                        Password
+                    </label>
+                </div>
+                <div class="md:w-2/3">
+                    <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="password" type="password" placeholder="******">
+                </div>
+            </div>
+            <div class="md:flex md:items-center  mb-6">
+                <div class="md:w-11/12f md:flex md:justify-center  md:items-center pl-20 md:pl-32  ">
+                  <button
+                class="overflow-hidden relative w-32 p-2 ml-5 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer z-10 group"
+              >
+                Click me!
+                <span
+                  class="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"
+                ></span>
+                <span
+                  class="absolute w-36 h-32 -top-8 -left-2 bg-indigo-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"
+                ></span>
+                <span
+                  class="absolute w-36 h-32 -top-8 -left-2 bg-indigo-600 rotate-12 transform scale-x-0 group-hover:scale-x-50 transition-transform group-hover:duration-1000 duration-500 origin-left"
+                ></span>
+                <span
+                  class="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10"
+                  >Register!</span
+                >
+              </button>
+            </div>
+            </div>
+        </form>
+      </div>
+    </div>
+
+
+    </div>
+    
+    
+                 
+     
+<script src="script.js">
+  console.log("JavaScript code is running")
+  const nav=document.querySelector("nav");
+  console.log("nav")
+  function scroll(){
+    {
+    console.log("scroll");
+    if(window.scrollY>0)
+    {
+      console.log("scroll is greater")
+      nav.style.position="fixed"
+      nav.style.backgroundColor="red"
+      nav.style.color="white"
+      
+      
+    }
+    else{
+      nav.style.position="fixed"
+      nav.style.backgroundColor="transparent"
+      
+
+    }
+  }
+  }
+  scroll()
+ 
+
+</script>
+  </body>
+</html>

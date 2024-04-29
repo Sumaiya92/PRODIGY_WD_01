@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/bc793d7b38.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container min-w-svw min-h-svh">
+      <div class="nav-bar bg-slate-500">
+        <nav class="h-16 text-lg fixed w-full">
+          <ul class="menu  text-xl flex justify-end text-center pt-5 space-x-8 px-5">
+            <li><a href="#" class="title">Home</a></li>
+            <li><a href="#" class="title">Destinations</a></li>
+            <li><a href="#" class="title">Flights</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Content -->
+      <div
+        class="content md:bg-[url(./images/travel.jpeg)] bg-[url(images/colorful-hot-air-balloon-picture-id841064058-1024x1024.jpg)]  w-screen h-screen  bg-cover bg-center"
+      >
+        <div class=" block relative  top-[30%] p-10">
+          <h1 class="text-5xl text-teal-950">
+            Travel the World with Ease!
+          </h1>
+          <p class="text-xl mt-2 ">
+            We offer the best deals on flights, hotels, car rentals, and more.
+            Start planning your next trip today!
+          </p>
+        </div>
+      </div>
+<!-- 
+        Destination -->
+        <div class="destinations">
+          <div class="container">
+              <h2>Explore our Destinations</h2>
+              <div>
+                <ul class="grid lg:grid-cols-3 gap-7 transform h bg-cover bg-center w-[95vw] p-10 text-xl">
+                  <li><img  class="hover:opacity-70 hover:" src="images/france.jpeg" alt="France">France</a></li>
+                  <li><img src="images/italy.jpeg" alt="Italy">Italy</a></li>
+                  <li><img src="images/Turkey.jpeg" alt="Turkey">Turkey</a></li>
+                  <li><img src="images/spain.jpeg" alt="Spain">Spain</a></li>
+                  <li><img src="images/canada.jpeg" alt="canada">Canada</a></li>
+                  <li><img src="images/indoneaia.jpeg" alt="indoneaia">Indonesia</a></li>
+              </ul>
+
+              </div>
+              
+          </div>
+      </div>
+
+      <!-- Flights -->
+     <div class="flights">
+        <div class="container">
+        <h2>Find the Best Flights</h2>
+        <form>
+        <input type="text" placeholder="From">
+        <input type="text" placeholder="To">
+        <button type="submit">Search</button>
+        </form>
+        </div>
+       </div>
+     </div>
+  </body>
+</html> 
